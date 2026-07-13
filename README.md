@@ -57,7 +57,7 @@ pip install -e '.[dev]'
 make data
 make experiment            # runs all four methods and promotes a gated champion
 make test
-make api                   # http://localhost:8000/docs
+make api                   # http://localhost:8000/docs (needs a prior make experiment)
 make dashboard             # http://localhost:3000
 ```
 
