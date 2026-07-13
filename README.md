@@ -1,5 +1,7 @@
 # VelaCL
 
+[![CI](https://github.com/wimpie007120606/VelaCL/actions/workflows/ci.yml/badge.svg)](https://github.com/wimpie007120606/VelaCL/actions/workflows/ci.yml)
+
 **Live measured dashboard:** https://wimpie007120606.github.io/VelaCL/
 
 VelaCL is a reproducible research system for studying how a multilingual intent model can learn from a chronological enterprise-data stream without forgetting earlier languages and domains. It combines a real byte-level Transformer, continual-learning experiments, active sample selection, artifact lineage, serving, and a dashboard in one small repository.
