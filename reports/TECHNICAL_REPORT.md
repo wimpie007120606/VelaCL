@@ -12,18 +12,18 @@ All methods use the same byte Transformer, seed, optimizer family, stage order a
 
 Run `make experiment` to regenerate `experiments/runs/summary.json`. The checked-in table below is updated only from that artifact.
 
-| Method | Average accuracy | Average forgetting | Backward transfer |
+| Method | Average task macro-F1 | Average forgetting | Backward transfer |
 |---|---:|---:|---:|
 | Static | 7.03% | 0.00% | 0.00% |
 | Naive sequential | 3.30% | 12.79% | -12.52% |
 | Random replay | **30.66%** | 1.00% | 7.06% |
 | Active balanced replay | 28.53% | **0.69%** | **9.30%** |
 
-The combined active selector did not beat random replay on average accuracy, but it retained tasks slightly better and produced stronger backward transfer while labeling at most eight new examples per stage. This is encouraging, not evidence of a novel general result.
+The combined active selector did not beat random replay on average task macro-F1, but it retained tasks slightly better and produced stronger backward transfer while labeling at most eight new examples per stage. This is encouraging, not evidence of a novel general result.
 
 ### Selection ablation
 
-| Selector | Average accuracy | Average forgetting | Backward transfer |
+| Selector | Average task macro-F1 | Average forgetting | Backward transfer |
 |---|---:|---:|---:|
 | Combined six-factor score | **28.53%** | **0.69%** | **9.30%** |
 | Uncertainty only | 26.91% | 1.52% | 6.33% |
