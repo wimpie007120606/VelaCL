@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-07-13T08:38:12.585249+00:00",
+  "methods": [
+    {
+      "method": "static",
+      "checkpoint": "experiments/runs/static/stage-5.pt",
+      "metrics": {
+        "average_accuracy": 0.07026098901098901,
+        "average_forgetting": 0.0,
+        "backward_transfer": 0.0
+      },
+      "dataset_sha256": "45650990c8fcc0c8ca7963cbb8d3b427614c22035102ef3cb39351f983f6612e"
+    },
+    {
+      "method": "naive",
+      "checkpoint": "experiments/runs/naive/stage-5.pt",
+      "metrics": {
+        "average_accuracy": 0.03298611111111111,
+        "average_forgetting": 0.12787698412698414,
+        "backward_transfer": -0.12522130647130647
+      },
+      "dataset_sha256": "45650990c8fcc0c8ca7963cbb8d3b427614c22035102ef3cb39351f983f6612e"
+    },
+    {
+      "method": "random_replay",
+      "checkpoint": "experiments/runs/random_replay/stage-5.pt",
+      "metrics": {
+        "average_accuracy": 0.30663780663780665,
+        "average_forgetting": 0.009980759980759991,
+        "backward_transfer": 0.07056716431716431
+      },
+      "dataset_sha256": "45650990c8fcc0c8ca7963cbb8d3b427614c22035102ef3cb39351f983f6612e"
+    },
+    {
+      "method": "active_balanced_replay",
+      "checkpoint": "experiments/runs/active_balanced_replay/stage-5.pt",
+      "metrics": {
+        "average_accuracy": 0.285295664983165,
+        "average_forgetting": 0.006944444444444445,
+        "backward_transfer": 0.09299022736522737
+      },
+      "dataset_sha256": "45650990c8fcc0c8ca7963cbb8d3b427614c22035102ef3cb39351f983f6612e"
+    }
+  ],
+  "registry": {
+    "models": [
+      {
+        "method": "static",
+        "checkpoint": "experiments/runs/static/stage-5.pt",
+        "metrics": {
+          "average_accuracy": 0.07026098901098901,
+          "average_forgetting": 0.0,
+          "backward_transfer": 0.0
+        },
+        "dataset_sha256": "45650990c8fcc0c8ca7963cbb8d3b427614c22035102ef3cb39351f983f6612e"
+      },
+      {
+        "method": "naive",
+        "checkpoint": "experiments/runs/naive/stage-5.pt",
+        "metrics": {
+          "average_accuracy": 0.03298611111111111,
+          "average_forgetting": 0.12787698412698414,
+          "backward_transfer": -0.12522130647130647
+        },
+        "dataset_sha256": "45650990c8fcc0c8ca7963cbb8d3b427614c22035102ef3cb39351f983f6612e"
+      },
+      {
+        "method": "random_replay",
+        "checkpoint": "experiments/runs/random_replay/stage-5.pt",
+        "metrics": {
+          "average_accuracy": 0.30663780663780665,
+          "average_forgetting": 0.009980759980759991,
+          "backward_transfer": 0.07056716431716431
+        },
+        "dataset_sha256": "45650990c8fcc0c8ca7963cbb8d3b427614c22035102ef3cb39351f983f6612e"
+      },
+      {
+        "method": "active_balanced_replay",
+        "checkpoint": "experiments/runs/active_balanced_replay/stage-5.pt",
+        "metrics": {
+          "average_accuracy": 0.285295664983165,
+          "average_forgetting": 0.006944444444444445,
+          "backward_transfer": 0.09299022736522737
+        },
+        "dataset_sha256": "45650990c8fcc0c8ca7963cbb8d3b427614c22035102ef3cb39351f983f6612e"
+      }
+    ],
+    "aliases": {
+      "champion": "random_replay",
+      "production": "random_replay",
+      "candidate": "random_replay",
+      "rollback": null
+    },
+    "history": [
+      {
+        "action": "promotion",
+        "from": null,
+        "to": "random_replay",
+        "gate": "accuracy>=0.25"
+      }
+    ]
+  },
+  "ablations": [
+    {
+      "method": "active_uncertainty_replay",
+      "checkpoint": "experiments/runs/active_uncertainty_replay/stage-5.pt",
+      "metrics": {
+        "average_accuracy": 0.26913017538017536,
+        "average_forgetting": 0.015172327672327677,
+        "backward_transfer": 0.06328902578902577
+      },
+      "dataset_sha256": "45650990c8fcc0c8ca7963cbb8d3b427614c22035102ef3cb39351f983f6612e"
+    },
+    {
+      "method": "active_diversity_replay",
+      "checkpoint": "experiments/runs/active_diversity_replay/stage-5.pt",
+      "metrics": {
+        "average_accuracy": 0.24080387205387208,
+        "average_forgetting": 0.03309583934583935,
+        "backward_transfer": 0.05377701002701001
+      },
+      "dataset_sha256": "45650990c8fcc0c8ca7963cbb8d3b427614c22035102ef3cb39351f983f6612e"
+    }
+  ]
+}

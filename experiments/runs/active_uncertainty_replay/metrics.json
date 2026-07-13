@@ -1,0 +1,718 @@
+{
+  "schema_version": 1,
+  "method": "active_uncertainty_replay",
+  "created_at": "2026-07-13T08:38:11.581662+00:00",
+  "dataset_sha256": "45650990c8fcc0c8ca7963cbb8d3b427614c22035102ef3cb39351f983f6612e",
+  "device": "cpu",
+  "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+  "labels": [
+    "balance",
+    "close_account",
+    "fraud",
+    "greeting",
+    "human_agent",
+    "payment_failed",
+    "policy",
+    "reset_pin"
+  ],
+  "stages": [
+    {
+      "stage": 0,
+      "training": {
+        "loss": 1.5812045733133953,
+        "examples": 12,
+        "throughput": 843.9792722022281
+      },
+      "aggregate": {
+        "accuracy": 0.5833333333333334,
+        "macro_f1": 0.18406593406593408,
+        "micro_f1": 0.5833333333333334,
+        "calibration_error": 0.2623157724738121,
+        "by_language": {
+          "af": 0.6666666666666666,
+          "en": 0.5
+        },
+        "by_domain": {
+          "support": 0.5833333333333334
+        }
+      },
+      "tasks": [
+        {
+          "accuracy": 0.5833333333333334,
+          "macro_f1": 0.18406593406593408,
+          "micro_f1": 0.5833333333333334,
+          "calibration_error": 0.2623157724738121,
+          "by_language": {
+            "af": 0.6666666666666666,
+            "en": 0.5
+          },
+          "by_domain": {
+            "support": 0.5833333333333334
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.641891323029995,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0
+          },
+          "by_domain": {
+            "payments": 0.0
+          }
+        },
+        {
+          "accuracy": 0.375,
+          "macro_f1": 0.125,
+          "micro_f1": 0.375,
+          "calibration_error": 0.2813617028295994,
+          "by_language": {
+            "zu": 0.375
+          },
+          "by_domain": {
+            "support": 0.375
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.6111911584933599,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "security": 0.0
+          }
+        },
+        {
+          "accuracy": 0.3,
+          "macro_f1": 0.1125,
+          "micro_f1": 0.3,
+          "calibration_error": 0.34929749667644505,
+          "by_language": {
+            "st": 0.3,
+            "xh": 0.3
+          },
+          "by_domain": {
+            "support": 0.3
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.5942766323685645,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "st": 0.0,
+            "xh": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "policy": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "training": {
+        "loss": 1.7884941498438518,
+        "examples": 16,
+        "throughput": 446.81223067054657
+      },
+      "aggregate": {
+        "accuracy": 0.5,
+        "macro_f1": 0.1875,
+        "micro_f1": 0.5,
+        "calibration_error": 0.18132462166249752,
+        "by_language": {
+          "af": 0.5,
+          "en": 0.5
+        },
+        "by_domain": {
+          "payments": 1.0,
+          "support": 0.3333333333333333
+        }
+      },
+      "tasks": [
+        {
+          "accuracy": 0.3333333333333333,
+          "macro_f1": 0.125,
+          "micro_f1": 0.3333333333333333,
+          "calibration_error": 0.19173148522774378,
+          "by_language": {
+            "af": 0.3333333333333333,
+            "en": 0.3333333333333333
+          },
+          "by_domain": {
+            "support": 0.3333333333333333
+          }
+        },
+        {
+          "accuracy": 1.0,
+          "macro_f1": 0.125,
+          "micro_f1": 1.0,
+          "calibration_error": 0.3885982781648636,
+          "by_language": {
+            "af": 1.0,
+            "en": 1.0
+          },
+          "by_domain": {
+            "payments": 1.0
+          }
+        },
+        {
+          "accuracy": 0.25,
+          "macro_f1": 0.05,
+          "micro_f1": 0.25,
+          "calibration_error": 0.3906579315662384,
+          "by_language": {
+            "zu": 0.25
+          },
+          "by_domain": {
+            "support": 0.25
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.5777908414602279,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "security": 0.0
+          }
+        },
+        {
+          "accuracy": 0.2,
+          "macro_f1": 0.047619047619047616,
+          "micro_f1": 0.2,
+          "calibration_error": 0.4371184766292572,
+          "by_language": {
+            "st": 0.2,
+            "xh": 0.2
+          },
+          "by_domain": {
+            "support": 0.2
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.5915485724806786,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "st": 0.0,
+            "xh": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "policy": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "training": {
+        "loss": 1.4162447651227315,
+        "examples": 24,
+        "throughput": 691.2508428764338
+      },
+      "aggregate": {
+        "accuracy": 0.6666666666666666,
+        "macro_f1": 0.3125,
+        "micro_f1": 0.6666666666666666,
+        "calibration_error": 0.26687436799208325,
+        "by_language": {
+          "af": 0.625,
+          "en": 0.625,
+          "zu": 0.75
+        },
+        "by_domain": {
+          "payments": 0.0,
+          "support": 0.8
+        }
+      },
+      "tasks": [
+        {
+          "accuracy": 0.8333333333333334,
+          "macro_f1": 0.30833333333333335,
+          "micro_f1": 0.8333333333333334,
+          "calibration_error": 0.23512915273507437,
+          "by_language": {
+            "af": 0.8333333333333334,
+            "en": 0.8333333333333334
+          },
+          "by_domain": {
+            "support": 0.8333333333333334
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.452859066426754,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0
+          },
+          "by_domain": {
+            "payments": 0.0
+          }
+        },
+        {
+          "accuracy": 0.75,
+          "macro_f1": 0.3333333333333333,
+          "micro_f1": 0.75,
+          "calibration_error": 0.26900016888976097,
+          "by_language": {
+            "zu": 0.75
+          },
+          "by_domain": {
+            "support": 0.75
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.43063516914844513,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "security": 0.0
+          }
+        },
+        {
+          "accuracy": 0.45,
+          "macro_f1": 0.21245421245421245,
+          "micro_f1": 0.45,
+          "calibration_error": 0.05548482239246369,
+          "by_language": {
+            "st": 0.5,
+            "xh": 0.4
+          },
+          "by_domain": {
+            "support": 0.45
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.4072018295526505,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "st": 0.0,
+            "xh": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "policy": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "training": {
+        "loss": 1.6578198273976643,
+        "examples": 32,
+        "throughput": 718.6170447801718
+      },
+      "aggregate": {
+        "accuracy": 0.6111111111111112,
+        "macro_f1": 0.42993600602296256,
+        "micro_f1": 0.6111111111111112,
+        "calibration_error": 0.11399212148454456,
+        "by_language": {
+          "af": 0.75,
+          "en": 0.5,
+          "zu": 0.5833333333333334
+        },
+        "by_domain": {
+          "payments": 0.5,
+          "security": 0.75,
+          "support": 0.55
+        }
+      },
+      "tasks": [
+        {
+          "accuracy": 0.5833333333333334,
+          "macro_f1": 0.23214285714285715,
+          "micro_f1": 0.5833333333333334,
+          "calibration_error": 0.386910339196523,
+          "by_language": {
+            "af": 0.6666666666666666,
+            "en": 0.5
+          },
+          "by_domain": {
+            "support": 0.5833333333333334
+          }
+        },
+        {
+          "accuracy": 0.5,
+          "macro_f1": 0.08333333333333333,
+          "micro_f1": 0.5,
+          "calibration_error": 0.30127505213022227,
+          "by_language": {
+            "af": 0.5,
+            "en": 0.5
+          },
+          "by_domain": {
+            "payments": 0.5
+          }
+        },
+        {
+          "accuracy": 0.5,
+          "macro_f1": 0.25,
+          "micro_f1": 0.5,
+          "calibration_error": 0.204050213098526,
+          "by_language": {
+            "zu": 0.5
+          },
+          "by_domain": {
+            "support": 0.5
+          }
+        },
+        {
+          "accuracy": 0.75,
+          "macro_f1": 0.19871794871794873,
+          "micro_f1": 0.75,
+          "calibration_error": 0.23065665115912756,
+          "by_language": {
+            "af": 1.0,
+            "en": 0.5,
+            "zu": 0.75
+          },
+          "by_domain": {
+            "security": 0.75
+          }
+        },
+        {
+          "accuracy": 0.4,
+          "macro_f1": 0.19583333333333333,
+          "micro_f1": 0.4,
+          "calibration_error": 0.2632801368832588,
+          "by_language": {
+            "st": 0.4,
+            "xh": 0.4
+          },
+          "by_domain": {
+            "support": 0.4
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.4828168481588364,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "st": 0.0,
+            "xh": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "policy": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "training": {
+        "loss": 1.185694111718072,
+        "examples": 40,
+        "throughput": 680.5716568443762
+      },
+      "aggregate": {
+        "accuracy": 0.625,
+        "macro_f1": 0.4747679856375508,
+        "micro_f1": 0.625,
+        "calibration_error": 0.15476057518805775,
+        "by_language": {
+          "af": 0.6666666666666666,
+          "en": 0.75,
+          "st": 0.5,
+          "xh": 0.5,
+          "zu": 0.6666666666666666
+        },
+        "by_domain": {
+          "payments": 0.75,
+          "security": 0.5,
+          "support": 0.65
+        }
+      },
+      "tasks": [
+        {
+          "accuracy": 0.8333333333333334,
+          "macro_f1": 0.3392857142857143,
+          "micro_f1": 0.8333333333333334,
+          "calibration_error": 0.20973373701175055,
+          "by_language": {
+            "af": 0.8333333333333334,
+            "en": 0.8333333333333334
+          },
+          "by_domain": {
+            "support": 0.8333333333333334
+          }
+        },
+        {
+          "accuracy": 0.75,
+          "macro_f1": 0.10714285714285714,
+          "micro_f1": 0.75,
+          "calibration_error": 0.30258170515298843,
+          "by_language": {
+            "af": 0.5,
+            "en": 1.0
+          },
+          "by_domain": {
+            "payments": 0.75
+          }
+        },
+        {
+          "accuracy": 0.75,
+          "macro_f1": 0.41666666666666663,
+          "micro_f1": 0.75,
+          "calibration_error": 0.22313237562775612,
+          "by_language": {
+            "zu": 0.75
+          },
+          "by_domain": {
+            "support": 0.75
+          }
+        },
+        {
+          "accuracy": 0.5,
+          "macro_f1": 0.1625,
+          "micro_f1": 0.5,
+          "calibration_error": 0.3122674797972043,
+          "by_language": {
+            "af": 0.5,
+            "en": 0.5,
+            "zu": 0.5
+          },
+          "by_domain": {
+            "security": 0.5
+          }
+        },
+        {
+          "accuracy": 0.5,
+          "macro_f1": 0.2737373737373737,
+          "micro_f1": 0.5,
+          "calibration_error": 0.25569773167371745,
+          "by_language": {
+            "st": 0.5,
+            "xh": 0.5
+          },
+          "by_domain": {
+            "support": 0.5
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.5163991138339044,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "st": 0.0,
+            "xh": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "policy": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "training": {
+        "loss": 1.2700248956680298,
+        "examples": 48,
+        "throughput": 693.6072321621937
+      },
+      "aggregate": {
+        "accuracy": 0.618421052631579,
+        "macro_f1": 0.588818637502848,
+        "micro_f1": 0.618421052631579,
+        "calibration_error": 0.12077044793649727,
+        "by_language": {
+          "af": 0.625,
+          "en": 0.625,
+          "st": 0.5714285714285714,
+          "xh": 0.5714285714285714,
+          "zu": 0.6875
+        },
+        "by_domain": {
+          "payments": 0.5,
+          "policy": 0.35,
+          "security": 0.5,
+          "support": 0.8
+        }
+      },
+      "tasks": [
+        {
+          "accuracy": 1.0,
+          "macro_f1": 0.375,
+          "micro_f1": 1.0,
+          "calibration_error": 0.16601853569348654,
+          "by_language": {
+            "af": 1.0,
+            "en": 1.0
+          },
+          "by_domain": {
+            "support": 1.0
+          }
+        },
+        {
+          "accuracy": 0.5,
+          "macro_f1": 0.08333333333333333,
+          "micro_f1": 0.5,
+          "calibration_error": 0.09019998461008072,
+          "by_language": {
+            "af": 0.0,
+            "en": 1.0
+          },
+          "by_domain": {
+            "payments": 0.5
+          }
+        },
+        {
+          "accuracy": 0.875,
+          "macro_f1": 0.4583333333333333,
+          "micro_f1": 0.875,
+          "calibration_error": 0.23551999405026436,
+          "by_language": {
+            "zu": 0.875
+          },
+          "by_domain": {
+            "support": 0.875
+          }
+        },
+        {
+          "accuracy": 0.5,
+          "macro_f1": 0.14935064935064934,
+          "micro_f1": 0.5,
+          "calibration_error": 0.16479599351684251,
+          "by_language": {
+            "af": 0.5,
+            "en": 0.5,
+            "zu": 0.5
+          },
+          "by_domain": {
+            "security": 0.5
+          }
+        },
+        {
+          "accuracy": 0.65,
+          "macro_f1": 0.42857142857142855,
+          "micro_f1": 0.65,
+          "calibration_error": 0.3375964105129242,
+          "by_language": {
+            "st": 0.7,
+            "xh": 0.6
+          },
+          "by_domain": {
+            "support": 0.65
+          }
+        },
+        {
+          "accuracy": 0.35,
+          "macro_f1": 0.1201923076923077,
+          "micro_f1": 0.35,
+          "calibration_error": 0.22077572345733643,
+          "by_language": {
+            "af": 0.5,
+            "en": 0.0,
+            "st": 0.25,
+            "xh": 0.5,
+            "zu": 0.5
+          },
+          "by_domain": {
+            "policy": 0.35
+          }
+        }
+      ]
+    }
+  ],
+  "forgetting_matrix": [
+    [
+      0.18406593406593408,
+      0.125,
+      0.30833333333333335,
+      0.23214285714285715,
+      0.3392857142857143,
+      0.375
+    ],
+    [
+      0.0,
+      0.125,
+      0.0,
+      0.08333333333333333,
+      0.10714285714285714,
+      0.08333333333333333
+    ],
+    [
+      0.125,
+      0.05,
+      0.3333333333333333,
+      0.25,
+      0.41666666666666663,
+      0.4583333333333333
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.19871794871794873,
+      0.1625,
+      0.14935064935064934
+    ],
+    [
+      0.1125,
+      0.047619047619047616,
+      0.21245421245421245,
+      0.19583333333333333,
+      0.2737373737373737,
+      0.42857142857142855
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.1201923076923077
+    ]
+  ],
+  "continual": {
+    "average_accuracy": 0.26913017538017536,
+    "average_forgetting": 0.015172327672327677,
+    "backward_transfer": 0.06328902578902577
+  },
+  "annotation_queue": [],
+  "checkpoint": "experiments/runs/active_uncertainty_replay/stage-5.pt"
+}

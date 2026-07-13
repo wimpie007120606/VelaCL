@@ -1,0 +1,1331 @@
+{
+  "schema_version": 1,
+  "method": "active_balanced_replay",
+  "created_at": "2026-07-13T08:38:10.555575+00:00",
+  "dataset_sha256": "45650990c8fcc0c8ca7963cbb8d3b427614c22035102ef3cb39351f983f6612e",
+  "device": "cpu",
+  "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+  "labels": [
+    "balance",
+    "close_account",
+    "fraud",
+    "greeting",
+    "human_agent",
+    "payment_failed",
+    "policy",
+    "reset_pin"
+  ],
+  "stages": [
+    {
+      "stage": 0,
+      "training": {
+        "loss": 1.5812045733133953,
+        "examples": 12,
+        "throughput": 667.9271936859884
+      },
+      "aggregate": {
+        "accuracy": 0.5833333333333334,
+        "macro_f1": 0.18406593406593408,
+        "micro_f1": 0.5833333333333334,
+        "calibration_error": 0.2623157724738121,
+        "by_language": {
+          "af": 0.6666666666666666,
+          "en": 0.5
+        },
+        "by_domain": {
+          "support": 0.5833333333333334
+        }
+      },
+      "tasks": [
+        {
+          "accuracy": 0.5833333333333334,
+          "macro_f1": 0.18406593406593408,
+          "micro_f1": 0.5833333333333334,
+          "calibration_error": 0.2623157724738121,
+          "by_language": {
+            "af": 0.6666666666666666,
+            "en": 0.5
+          },
+          "by_domain": {
+            "support": 0.5833333333333334
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.641891323029995,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0
+          },
+          "by_domain": {
+            "payments": 0.0
+          }
+        },
+        {
+          "accuracy": 0.375,
+          "macro_f1": 0.125,
+          "micro_f1": 0.375,
+          "calibration_error": 0.2813617028295994,
+          "by_language": {
+            "zu": 0.375
+          },
+          "by_domain": {
+            "support": 0.375
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.6111911584933599,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "security": 0.0
+          }
+        },
+        {
+          "accuracy": 0.3,
+          "macro_f1": 0.1125,
+          "micro_f1": 0.3,
+          "calibration_error": 0.34929749667644505,
+          "by_language": {
+            "st": 0.3,
+            "xh": 0.3
+          },
+          "by_domain": {
+            "support": 0.3
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.5942766323685645,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "st": 0.0,
+            "xh": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "policy": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "stage": 1,
+      "training": {
+        "loss": 1.782824198404948,
+        "examples": 16,
+        "throughput": 718.3803003456751
+      },
+      "aggregate": {
+        "accuracy": 0.5625,
+        "macro_f1": 0.24166666666666664,
+        "micro_f1": 0.5625,
+        "calibration_error": 0.31319940090179443,
+        "by_language": {
+          "af": 0.5,
+          "en": 0.625
+        },
+        "by_domain": {
+          "payments": 1.0,
+          "support": 0.4166666666666667
+        }
+      },
+      "tasks": [
+        {
+          "accuracy": 0.4166666666666667,
+          "macro_f1": 0.175,
+          "micro_f1": 0.4166666666666667,
+          "calibration_error": 0.3632688572009405,
+          "by_language": {
+            "af": 0.3333333333333333,
+            "en": 0.5
+          },
+          "by_domain": {
+            "support": 0.4166666666666667
+          }
+        },
+        {
+          "accuracy": 1.0,
+          "macro_f1": 0.125,
+          "micro_f1": 1.0,
+          "calibration_error": 0.3834589868783951,
+          "by_language": {
+            "af": 1.0,
+            "en": 1.0
+          },
+          "by_domain": {
+            "payments": 1.0
+          }
+        },
+        {
+          "accuracy": 0.25,
+          "macro_f1": 0.05,
+          "micro_f1": 0.25,
+          "calibration_error": 0.33179672062397003,
+          "by_language": {
+            "zu": 0.25
+          },
+          "by_domain": {
+            "support": 0.25
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.5579548353950183,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "security": 0.0
+          }
+        },
+        {
+          "accuracy": 0.2,
+          "macro_f1": 0.041666666666666664,
+          "micro_f1": 0.2,
+          "calibration_error": 0.36028704345226287,
+          "by_language": {
+            "st": 0.2,
+            "xh": 0.2
+          },
+          "by_domain": {
+            "support": 0.2
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.5734700739383698,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "st": 0.0,
+            "xh": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "policy": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "stage": 2,
+      "training": {
+        "loss": 1.3799638549486797,
+        "examples": 24,
+        "throughput": 650.3754129602278
+      },
+      "aggregate": {
+        "accuracy": 0.7916666666666666,
+        "macro_f1": 0.39656862745098037,
+        "micro_f1": 0.7916666666666666,
+        "calibration_error": 0.2657082627216975,
+        "by_language": {
+          "af": 0.75,
+          "en": 1.0,
+          "zu": 0.625
+        },
+        "by_domain": {
+          "payments": 1.0,
+          "support": 0.75
+        }
+      },
+      "tasks": [
+        {
+          "accuracy": 0.8333333333333334,
+          "macro_f1": 0.3333333333333333,
+          "micro_f1": 0.8333333333333334,
+          "calibration_error": 0.27867304533720016,
+          "by_language": {
+            "af": 0.6666666666666666,
+            "en": 1.0
+          },
+          "by_domain": {
+            "support": 0.8333333333333334
+          }
+        },
+        {
+          "accuracy": 1.0,
+          "macro_f1": 0.125,
+          "micro_f1": 1.0,
+          "calibration_error": 0.4664129912853241,
+          "by_language": {
+            "af": 1.0,
+            "en": 1.0
+          },
+          "by_domain": {
+            "payments": 1.0
+          }
+        },
+        {
+          "accuracy": 0.625,
+          "macro_f1": 0.27976190476190477,
+          "micro_f1": 0.625,
+          "calibration_error": 0.23832273855805397,
+          "by_language": {
+            "zu": 0.625
+          },
+          "by_domain": {
+            "support": 0.625
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.4550586864352226,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "security": 0.0
+          }
+        },
+        {
+          "accuracy": 0.4,
+          "macro_f1": 0.20739348370927319,
+          "micro_f1": 0.4,
+          "calibration_error": 0.31850385665893555,
+          "by_language": {
+            "st": 0.3,
+            "xh": 0.5
+          },
+          "by_domain": {
+            "support": 0.4
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.46180990934371946,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "st": 0.0,
+            "xh": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "policy": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "stage": 3,
+      "training": {
+        "loss": 1.6584494908650715,
+        "examples": 32,
+        "throughput": 709.2138013131668
+      },
+      "aggregate": {
+        "accuracy": 0.5833333333333334,
+        "macro_f1": 0.3818694463431306,
+        "micro_f1": 0.5833333333333334,
+        "calibration_error": 0.17302856014834508,
+        "by_language": {
+          "af": 0.5833333333333334,
+          "en": 0.6666666666666666,
+          "zu": 0.5
+        },
+        "by_domain": {
+          "payments": 1.0,
+          "security": 0.3333333333333333,
+          "support": 0.65
+        }
+      },
+      "tasks": [
+        {
+          "accuracy": 0.5833333333333334,
+          "macro_f1": 0.23214285714285715,
+          "micro_f1": 0.5833333333333334,
+          "calibration_error": 0.2914309824506442,
+          "by_language": {
+            "af": 0.5,
+            "en": 0.6666666666666666
+          },
+          "by_domain": {
+            "support": 0.5833333333333334
+          }
+        },
+        {
+          "accuracy": 1.0,
+          "macro_f1": 0.125,
+          "micro_f1": 1.0,
+          "calibration_error": 0.5522948354482651,
+          "by_language": {
+            "af": 1.0,
+            "en": 1.0
+          },
+          "by_domain": {
+            "payments": 1.0
+          }
+        },
+        {
+          "accuracy": 0.75,
+          "macro_f1": 0.325,
+          "micro_f1": 0.75,
+          "calibration_error": 0.3450828492641449,
+          "by_language": {
+            "zu": 0.75
+          },
+          "by_domain": {
+            "support": 0.75
+          }
+        },
+        {
+          "accuracy": 0.3333333333333333,
+          "macro_f1": 0.11071428571428571,
+          "micro_f1": 0.3333333333333333,
+          "calibration_error": 0.13906437903642654,
+          "by_language": {
+            "af": 0.5,
+            "en": 0.5,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "security": 0.3333333333333333
+          }
+        },
+        {
+          "accuracy": 0.5,
+          "macro_f1": 0.27976190476190477,
+          "micro_f1": 0.5,
+          "calibration_error": 0.2679183349013329,
+          "by_language": {
+            "st": 0.5,
+            "xh": 0.5
+          },
+          "by_domain": {
+            "support": 0.5
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.4038118734955788,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "st": 0.0,
+            "xh": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "policy": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "training": {
+        "loss": 1.2700726588567097,
+        "examples": 40,
+        "throughput": 653.0408886603985
+      },
+      "aggregate": {
+        "accuracy": 0.7142857142857143,
+        "macro_f1": 0.5383921633921633,
+        "micro_f1": 0.7142857142857143,
+        "calibration_error": 0.10809503229601042,
+        "by_language": {
+          "af": 0.75,
+          "en": 0.8333333333333334,
+          "st": 0.7,
+          "xh": 0.5,
+          "zu": 0.75
+        },
+        "by_domain": {
+          "payments": 0.75,
+          "security": 0.5,
+          "support": 0.775
+        }
+      },
+      "tasks": [
+        {
+          "accuracy": 1.0,
+          "macro_f1": 0.375,
+          "micro_f1": 1.0,
+          "calibration_error": 0.2327032039562861,
+          "by_language": {
+            "af": 1.0,
+            "en": 1.0
+          },
+          "by_domain": {
+            "support": 1.0
+          }
+        },
+        {
+          "accuracy": 0.75,
+          "macro_f1": 0.10714285714285714,
+          "micro_f1": 0.75,
+          "calibration_error": 0.29088056087493896,
+          "by_language": {
+            "af": 0.5,
+            "en": 1.0
+          },
+          "by_domain": {
+            "payments": 0.75
+          }
+        },
+        {
+          "accuracy": 0.875,
+          "macro_f1": 0.43333333333333335,
+          "micro_f1": 0.875,
+          "calibration_error": 0.26400330290198326,
+          "by_language": {
+            "zu": 0.875
+          },
+          "by_domain": {
+            "support": 0.875
+          }
+        },
+        {
+          "accuracy": 0.5,
+          "macro_f1": 0.14935064935064934,
+          "micro_f1": 0.5,
+          "calibration_error": 0.3129757170875867,
+          "by_language": {
+            "af": 0.5,
+            "en": 0.5,
+            "zu": 0.5
+          },
+          "by_domain": {
+            "security": 0.5
+          }
+        },
+        {
+          "accuracy": 0.6,
+          "macro_f1": 0.3344988344988345,
+          "micro_f1": 0.6,
+          "calibration_error": 0.19131863564252855,
+          "by_language": {
+            "st": 0.7,
+            "xh": 0.5
+          },
+          "by_domain": {
+            "support": 0.6
+          }
+        },
+        {
+          "accuracy": 0.0,
+          "macro_f1": 0.0,
+          "micro_f1": 0.0,
+          "calibration_error": 0.5831113897264003,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "st": 0.0,
+            "xh": 0.0,
+            "zu": 0.0
+          },
+          "by_domain": {
+            "policy": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "stage": 5,
+      "training": {
+        "loss": 1.14763253264957,
+        "examples": 48,
+        "throughput": 869.0217639634695
+      },
+      "aggregate": {
+        "accuracy": 0.6842105263157895,
+        "macro_f1": 0.6727028260696991,
+        "micro_f1": 0.6842105263157895,
+        "calibration_error": 0.11617125982516692,
+        "by_language": {
+          "af": 0.6875,
+          "en": 0.6875,
+          "st": 0.6428571428571429,
+          "xh": 0.7142857142857143,
+          "zu": 0.6875
+        },
+        "by_domain": {
+          "payments": 0.5,
+          "policy": 0.35,
+          "security": 0.8333333333333334,
+          "support": 0.825
+        }
+      },
+      "tasks": [
+        {
+          "accuracy": 1.0,
+          "macro_f1": 0.375,
+          "micro_f1": 1.0,
+          "calibration_error": 0.12520294388135278,
+          "by_language": {
+            "af": 1.0,
+            "en": 1.0
+          },
+          "by_domain": {
+            "support": 1.0
+          }
+        },
+        {
+          "accuracy": 0.5,
+          "macro_f1": 0.08333333333333333,
+          "micro_f1": 0.5,
+          "calibration_error": 0.4967568814754486,
+          "by_language": {
+            "af": 0.5,
+            "en": 0.5
+          },
+          "by_domain": {
+            "payments": 0.5
+          }
+        },
+        {
+          "accuracy": 1.0,
+          "macro_f1": 0.5,
+          "micro_f1": 1.0,
+          "calibration_error": 0.218887560069561,
+          "by_language": {
+            "zu": 1.0
+          },
+          "by_domain": {
+            "support": 1.0
+          }
+        },
+        {
+          "accuracy": 0.8333333333333334,
+          "macro_f1": 0.22727272727272727,
+          "micro_f1": 0.8333333333333334,
+          "calibration_error": 0.2645026743412018,
+          "by_language": {
+            "af": 1.0,
+            "en": 1.0,
+            "zu": 0.5
+          },
+          "by_domain": {
+            "security": 0.8333333333333334
+          }
+        },
+        {
+          "accuracy": 0.65,
+          "macro_f1": 0.4063762626262626,
+          "micro_f1": 0.65,
+          "calibration_error": 0.29043285250663764,
+          "by_language": {
+            "st": 0.6,
+            "xh": 0.7
+          },
+          "by_domain": {
+            "support": 0.65
+          }
+        },
+        {
+          "accuracy": 0.35,
+          "macro_f1": 0.11979166666666666,
+          "micro_f1": 0.35,
+          "calibration_error": 0.29161274507641793,
+          "by_language": {
+            "af": 0.0,
+            "en": 0.0,
+            "st": 0.75,
+            "xh": 0.75,
+            "zu": 0.25
+          },
+          "by_domain": {
+            "policy": 0.35
+          }
+        }
+      ]
+    }
+  ],
+  "forgetting_matrix": [
+    [
+      0.18406593406593408,
+      0.175,
+      0.3333333333333333,
+      0.23214285714285715,
+      0.375,
+      0.375
+    ],
+    [
+      0.0,
+      0.125,
+      0.125,
+      0.125,
+      0.10714285714285714,
+      0.08333333333333333
+    ],
+    [
+      0.125,
+      0.05,
+      0.27976190476190477,
+      0.325,
+      0.43333333333333335,
+      0.5
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.11071428571428571,
+      0.14935064935064934,
+      0.22727272727272727
+    ],
+    [
+      0.1125,
+      0.041666666666666664,
+      0.20739348370927319,
+      0.27976190476190477,
+      0.3344988344988345,
+      0.4063762626262626
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.11979166666666666
+    ]
+  ],
+  "continual": {
+    "average_accuracy": 0.285295664983165,
+    "average_forgetting": 0.006944444444444445,
+    "backward_transfer": 0.09299022736522737
+  },
+  "annotation_queue": [
+    {
+      "event_id": "evt-0027",
+      "text": "the payment did not go through now",
+      "language": "en",
+      "intent": "payment_failed",
+      "domain": "payments",
+      "privacy_risk": false,
+      "score": 0.589690500497818,
+      "uncertainty": 0.5569095015525818,
+      "diversity": 0.8630882501602173,
+      "language_scarcity": 0.0,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0029",
+      "text": "my kaartbetaling het misluk",
+      "language": "af",
+      "intent": "payment_failed",
+      "domain": "payments",
+      "privacy_risk": false,
+      "score": 0.5333922743797302,
+      "uncertainty": 0.2779742479324341,
+      "diversity": 1.0,
+      "language_scarcity": 0.0,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "diversity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0025",
+      "text": "my card payment failed now",
+      "language": "en",
+      "intent": "payment_failed",
+      "domain": "payments",
+      "privacy_risk": false,
+      "score": 0.47241508960723877,
+      "uncertainty": 0.28410089015960693,
+      "diversity": 0.6859241127967834,
+      "language_scarcity": 0.0,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0031",
+      "text": "die betaling het nie deurgegaan nie",
+      "language": "af",
+      "intent": "payment_failed",
+      "domain": "payments",
+      "privacy_risk": false,
+      "score": 0.46155679821968076,
+      "uncertainty": 0.3528363108634949,
+      "diversity": 0.5285295248031616,
+      "language_scarcity": 0.0,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0045",
+      "text": "ngifuna ukukhuluma nomuntu",
+      "language": "zu",
+      "intent": "human_agent",
+      "domain": "support",
+      "privacy_risk": false,
+      "score": 0.5912609875202179,
+      "uncertainty": 0.4708699584007263,
+      "diversity": 1.0,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "diversity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0039",
+      "text": "ngibonise imali ku-akhawunti",
+      "language": "zu",
+      "intent": "balance",
+      "domain": "support",
+      "privacy_risk": true,
+      "score": 0.5748535633087157,
+      "uncertainty": 0.35285115242004395,
+      "diversity": 0.5949910879135132,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0037",
+      "text": "ithini ibhalansi ye-akhawunti yami",
+      "language": "zu",
+      "intent": "balance",
+      "domain": "support",
+      "privacy_risk": true,
+      "score": 0.5185358941555023,
+      "uncertainty": 0.3520904779434204,
+      "diversity": 0.314543753862381,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0035",
+      "text": "sawubona bosekelo",
+      "language": "zu",
+      "intent": "greeting",
+      "domain": "support",
+      "privacy_risk": false,
+      "score": 0.5023506164550781,
+      "uncertainty": 0.519051194190979,
+      "diversity": 0.4831762909889221,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0033",
+      "text": "sawubona, ngidinga usizo",
+      "language": "zu",
+      "intent": "greeting",
+      "domain": "support",
+      "privacy_risk": false,
+      "score": 0.4717908322811126,
+      "uncertainty": 0.42122840881347656,
+      "diversity": 0.4771115481853485,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0047",
+      "text": "ngixhumanise nomenzeli",
+      "language": "zu",
+      "intent": "human_agent",
+      "domain": "support",
+      "privacy_risk": false,
+      "score": 0.4653660416603088,
+      "uncertainty": 0.3876227140426636,
+      "diversity": 0.49539613723754883,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0041",
+      "text": "inkokhelo yekhadi yehlulekile",
+      "language": "zu",
+      "intent": "payment_failed",
+      "domain": "support",
+      "privacy_risk": false,
+      "score": 0.3722329199314117,
+      "uncertainty": 0.4675068259239197,
+      "diversity": 0.4099043607711792,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.0,
+      "forgetting_risk": 0.0,
+      "safety_importance": 0.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0043",
+      "text": "inkokhelo ayiphumelelanga",
+      "language": "zu",
+      "intent": "payment_failed",
+      "domain": "support",
+      "privacy_risk": false,
+      "score": 0.36553112268447874,
+      "uncertainty": 0.37440550327301025,
+      "diversity": 0.5160473585128784,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.0,
+      "forgetting_risk": 0.0,
+      "safety_importance": 0.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0053",
+      "text": "I forgot my pin",
+      "language": "en",
+      "intent": "reset_pin",
+      "domain": "security",
+      "privacy_risk": true,
+      "score": 0.723660534620285,
+      "uncertainty": 0.5788684487342834,
+      "diversity": 1.0,
+      "language_scarcity": 0.0,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "diversity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0061",
+      "text": "ek het my pin vergeet",
+      "language": "af",
+      "intent": "reset_pin",
+      "domain": "security",
+      "privacy_risk": true,
+      "score": 0.6850043892860412,
+      "uncertainty": 0.5569248199462891,
+      "diversity": 0.8396347165107727,
+      "language_scarcity": 0.0,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0057",
+      "text": "ek sien 'n transaksie wat ek nie gemaak het nie",
+      "language": "af",
+      "intent": "fraud",
+      "domain": "security",
+      "privacy_risk": true,
+      "score": 0.653375232219696,
+      "uncertainty": 0.5913213491439819,
+      "diversity": 0.6298941373825073,
+      "language_scarcity": 0.0,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0051",
+      "text": "someone used my bank card",
+      "language": "en",
+      "intent": "fraud",
+      "domain": "security",
+      "privacy_risk": true,
+      "score": 0.6444126725196838,
+      "uncertainty": 0.606948971748352,
+      "diversity": 0.5616399049758911,
+      "language_scarcity": 0.0,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0063",
+      "text": "help my om my pin te herstel",
+      "language": "af",
+      "intent": "reset_pin",
+      "domain": "security",
+      "privacy_risk": true,
+      "score": 0.6402520418167114,
+      "uncertainty": 0.5331714153289795,
+      "diversity": 0.6515030860900879,
+      "language_scarcity": 0.0,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0071",
+      "text": "ngisize ngishintshe iphinikhodi",
+      "language": "zu",
+      "intent": "reset_pin",
+      "domain": "security",
+      "privacy_risk": true,
+      "score": 0.623699676990509,
+      "uncertainty": 0.4969578981399536,
+      "diversity": 0.6230615377426147,
+      "language_scarcity": 0.0,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0049",
+      "text": "I see a transaction I did not make",
+      "language": "en",
+      "intent": "fraud",
+      "domain": "security",
+      "privacy_risk": true,
+      "score": 0.6212234020233154,
+      "uncertainty": 0.5163122415542603,
+      "diversity": 0.5816486477851868,
+      "language_scarcity": 0.0,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0055",
+      "text": "help me reset my account pin now",
+      "language": "en",
+      "intent": "reset_pin",
+      "domain": "security",
+      "privacy_risk": true,
+      "score": 0.6180705666542052,
+      "uncertainty": 0.6462372541427612,
+      "diversity": 0.37099695205688477,
+      "language_scarcity": 0.0,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0087",
+      "text": "umntu usebenzise ikhadi lam",
+      "language": "xh",
+      "intent": "fraud",
+      "domain": "support",
+      "privacy_risk": true,
+      "score": 0.7464020192623138,
+      "uncertainty": 0.7403870820999146,
+      "diversity": 0.4964294731616974,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.5,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0085",
+      "text": "ndibona intlawulo endingayenzanga",
+      "language": "xh",
+      "intent": "fraud",
+      "domain": "support",
+      "privacy_risk": true,
+      "score": 0.6563166975975037,
+      "uncertainty": 0.5263165235519409,
+      "diversity": 0.36710870265960693,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.5,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0099",
+      "text": "mpontshe tjhelete ya ka",
+      "language": "st",
+      "intent": "balance",
+      "domain": "support",
+      "privacy_risk": true,
+      "score": 0.6453223347663879,
+      "uncertainty": 0.7056282162666321,
+      "diversity": 0.4181693494319916,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0105",
+      "text": "ke bona tefo eo ke sa e etsang",
+      "language": "st",
+      "intent": "fraud",
+      "domain": "support",
+      "privacy_risk": true,
+      "score": 0.638077962398529,
+      "uncertainty": 0.6825811862945557,
+      "diversity": 0.5415180325508118,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.5,
+      "forgetting_risk": 0.0,
+      "safety_importance": 1.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0097",
+      "text": "balanse ya akhaonto ke bokae",
+      "language": "st",
+      "intent": "balance",
+      "domain": "support",
+      "privacy_risk": true,
+      "score": 0.6270358681678772,
+      "uncertainty": 0.6682204008102417,
+      "diversity": 0.38284873962402344,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 1.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0107",
+      "text": "motho o sebedisitse karete ya ka",
+      "language": "st",
+      "intent": "fraud",
+      "domain": "support",
+      "privacy_risk": true,
+      "score": 0.6069695949554442,
+      "uncertainty": 0.6463116407394409,
+      "diversity": 0.4403805136680603,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.5,
+      "forgetting_risk": 0.0,
+      "safety_importance": 1.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0095",
+      "text": "dumela basebetsi",
+      "language": "st",
+      "intent": "greeting",
+      "domain": "support",
+      "privacy_risk": false,
+      "score": 0.5940014362335205,
+      "uncertainty": 0.7410576343536377,
+      "diversity": 0.608420729637146,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0075",
+      "text": "molweni baxhasi",
+      "language": "xh",
+      "intent": "greeting",
+      "domain": "support",
+      "privacy_risk": false,
+      "score": 0.556525444984436,
+      "uncertainty": 0.6668039560317993,
+      "diversity": 0.5324212908744812,
+      "language_scarcity": 1.0,
+      "intent_novelty": 0.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "language scarcity",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0139",
+      "text": "chaza umgaqo omtsha",
+      "language": "xh",
+      "intent": "policy",
+      "domain": "policy",
+      "privacy_risk": false,
+      "score": 0.6767839550971985,
+      "uncertainty": 0.7075217962265015,
+      "diversity": 0.5101370811462402,
+      "language_scarcity": 0.75,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0141",
+      "text": "nceda uvale iakhawunti yam",
+      "language": "xh",
+      "intent": "close_account",
+      "domain": "policy",
+      "privacy_risk": false,
+      "score": 0.664166498184204,
+      "uncertainty": 0.5826214551925659,
+      "diversity": 0.6344003081321716,
+      "language_scarcity": 0.75,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0143",
+      "text": "ndifuna ukurhoxisa iakhawunti",
+      "language": "xh",
+      "intent": "close_account",
+      "domain": "policy",
+      "privacy_risk": false,
+      "score": 0.6609995424747467,
+      "uncertainty": 0.6486857533454895,
+      "diversity": 0.5194690823554993,
+      "language_scarcity": 0.75,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0137",
+      "text": "uthini umda omtsha wodluliselo",
+      "language": "xh",
+      "intent": "policy",
+      "domain": "policy",
+      "privacy_risk": false,
+      "score": 0.6583138346672057,
+      "uncertainty": 0.5971670150756836,
+      "diversity": 0.5833186507225037,
+      "language_scarcity": 0.75,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0147",
+      "text": "hlalosa molao o motjha",
+      "language": "st",
+      "intent": "policy",
+      "domain": "policy",
+      "privacy_risk": false,
+      "score": 0.6327484369277954,
+      "uncertainty": 0.6287094354629517,
+      "diversity": 0.5331780314445496,
+      "language_scarcity": 0.5833333333333333,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0145",
+      "text": "moedi o motjha wa phetiso ke ofe",
+      "language": "st",
+      "intent": "policy",
+      "domain": "policy",
+      "privacy_risk": false,
+      "score": 0.6229574918746947,
+      "uncertainty": 0.5843557119369507,
+      "diversity": 0.5507538914680481,
+      "language_scarcity": 0.5833333333333333,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0131",
+      "text": "chaza inqubomgomo entsha",
+      "language": "zu",
+      "intent": "policy",
+      "domain": "policy",
+      "privacy_risk": false,
+      "score": 0.5962159156799316,
+      "uncertainty": 0.7614319920539856,
+      "diversity": 0.4014315903186798,
+      "language_scarcity": 0.25,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    },
+    {
+      "event_id": "evt-0149",
+      "text": "ka kopo kwala akhaonto",
+      "language": "st",
+      "intent": "close_account",
+      "domain": "policy",
+      "privacy_risk": false,
+      "score": 0.5696550607681273,
+      "uncertainty": 0.2948535680770874,
+      "diversity": 0.7184949517250061,
+      "language_scarcity": 0.5833333333333333,
+      "intent_novelty": 1.0,
+      "forgetting_risk": 1.0,
+      "safety_importance": 0.0,
+      "selection_reason": "intent novelty",
+      "annotation_status": "pending"
+    }
+  ],
+  "checkpoint": "experiments/runs/active_balanced_replay/stage-5.pt"
+}

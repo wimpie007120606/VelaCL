@@ -1,0 +1,2 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","required":["id","timestamp","stage","split","text","language","domain","intent","source","difficulty","annotation_status","privacy_risk","safety_risk"],"properties":{"id":{"type":"string"},"timestamp":{"type":"string","format":"date-time"},"stage":{"type":"integer","minimum":0},"split":{"enum":["train","test"]},"text":{"type":"string","minLength":1},"language":{"type":"string"},"domain":{"type":"string"},"intent":{"type":"string"},"privacy_risk":{"type":"boolean"},"safety_risk":{"type":"boolean"}}}
+

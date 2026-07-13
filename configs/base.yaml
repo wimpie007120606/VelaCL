@@ -1,0 +1,27 @@
+seed: 42
+data_path: data/streaming/events.jsonl
+artifact_dir: experiments/runs
+registry_path: experiments/registry.json
+model:
+  max_length: 96
+  d_model: 48
+  nhead: 4
+  num_layers: 1
+  dim_feedforward: 96
+  dropout: 0.1
+training:
+  epochs: 3
+  batch_size: 16
+  learning_rate: 0.003
+  weight_decay: 0.0001
+  replay_capacity: 64
+  annotation_budget: 8
+  gradient_accumulation: 1
+  mixed_precision: false
+methods:
+  - static
+  - naive
+  - random_replay
+  - active_balanced_replay
+  - active_uncertainty_replay
+  - active_diversity_replay

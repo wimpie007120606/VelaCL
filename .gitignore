@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+mlruns/
+apps/dashboard/node_modules/
+apps/dashboard/.next/
+apps/dashboard/out/
+experiments/runs/*/*.pt
+*.tmp
+.env

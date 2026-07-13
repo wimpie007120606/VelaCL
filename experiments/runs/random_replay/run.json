@@ -1,0 +1,40 @@
+{
+  "run_name": "random_replay",
+  "status": "complete",
+  "git_commit": "uncommitted",
+  "parameters": {
+    "method": "random_replay",
+    "seed": 42,
+    "epochs": 3,
+    "batch_size": 16,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "replay_capacity": 64,
+    "annotation_budget": 8,
+    "gradient_accumulation": 1,
+    "mixed_precision": false,
+    "max_length": 96,
+    "d_model": 48,
+    "nhead": 4,
+    "num_layers": 1,
+    "dim_feedforward": 96,
+    "dropout": 0.1
+  },
+  "metrics": {
+    "stage_0_macro_f1": 0.18406593406593408,
+    "stage_1_macro_f1": 0.24166666666666664,
+    "stage_2_macro_f1": 0.3980769230769231,
+    "stage_3_macro_f1": 0.5717261904761906,
+    "stage_4_macro_f1": 0.7106251591545709,
+    "stage_5_macro_f1": 0.7461868686868687,
+    "average_accuracy": 0.30663780663780665,
+    "average_forgetting": 0.009980759980759991,
+    "backward_transfer": 0.07056716431716431
+  },
+  "hardware": {
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "torch": "2.13.0+cpu",
+    "cuda": false
+  },
+  "training_time_seconds": 1.1208462879876606
+}

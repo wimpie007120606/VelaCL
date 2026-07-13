@@ -1,0 +1,40 @@
+{
+  "run_name": "active_diversity_replay",
+  "status": "complete",
+  "git_commit": "uncommitted",
+  "parameters": {
+    "method": "active_diversity_replay",
+    "seed": 42,
+    "epochs": 3,
+    "batch_size": 16,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "replay_capacity": 64,
+    "annotation_budget": 8,
+    "gradient_accumulation": 1,
+    "mixed_precision": false,
+    "max_length": 96,
+    "d_model": 48,
+    "nhead": 4,
+    "num_layers": 1,
+    "dim_feedforward": 96,
+    "dropout": 0.1
+  },
+  "metrics": {
+    "stage_0_macro_f1": 0.18406593406593408,
+    "stage_1_macro_f1": 0.24166666666666664,
+    "stage_2_macro_f1": 0.3723484848484848,
+    "stage_3_macro_f1": 0.3970238095238095,
+    "stage_4_macro_f1": 0.5719359600854419,
+    "stage_5_macro_f1": 0.5576354679802955,
+    "average_accuracy": 0.24080387205387208,
+    "average_forgetting": 0.03309583934583935,
+    "backward_transfer": 0.05377701002701001
+  },
+  "hardware": {
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "torch": "2.13.0+cpu",
+    "cuda": false
+  },
+  "training_time_seconds": 0.9882174829981523
+}

@@ -1,0 +1,40 @@
+{
+  "run_name": "naive",
+  "status": "complete",
+  "git_commit": "uncommitted",
+  "parameters": {
+    "method": "naive",
+    "seed": 42,
+    "epochs": 3,
+    "batch_size": 16,
+    "learning_rate": 0.003,
+    "weight_decay": 0.0001,
+    "replay_capacity": 64,
+    "annotation_budget": 8,
+    "gradient_accumulation": 1,
+    "mixed_precision": false,
+    "max_length": 96,
+    "d_model": 48,
+    "nhead": 4,
+    "num_layers": 1,
+    "dim_feedforward": 96,
+    "dropout": 0.1
+  },
+  "metrics": {
+    "stage_0_macro_f1": 0.18406593406593408,
+    "stage_1_macro_f1": 0.05,
+    "stage_2_macro_f1": 0.1960108604845447,
+    "stage_3_macro_f1": 0.10416666666666666,
+    "stage_4_macro_f1": 0.03787878787878788,
+    "stage_5_macro_f1": 0.09178743961352656,
+    "average_accuracy": 0.03298611111111111,
+    "average_forgetting": 0.12787698412698414,
+    "backward_transfer": -0.12522130647130647
+  },
+  "hardware": {
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "torch": "2.13.0+cpu",
+    "cuda": false
+  },
+  "training_time_seconds": 0.5775543369963998
+}

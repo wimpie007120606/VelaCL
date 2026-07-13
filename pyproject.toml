@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "velacl"
+version = "0.1.0"
+description = "Continual multilingual learning for streaming enterprise NLP"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+dependencies = [
+  "fastapi>=0.110,<1",
+  "numpy>=1.26,<3",
+  "prometheus-client>=0.20,<1",
+  "pydantic>=2.6,<3",
+  "PyYAML>=6,<7",
+  "torch>=2.2,<3",
+  "uvicorn[standard]>=0.29,<1",
+]
+
+[project.optional-dependencies]
+dev = ["httpx>=0.27,<1", "mypy>=1.10,<2", "pytest>=8,<9", "ruff>=0.5,<1"]
+tracking = ["mlflow>=2.14,<4"]
+
+[project.scripts]
+velacl-data = "velacl.data:main"
+velacl-train = "velacl.experiment:main"
+velacl-evaluate = "velacl.evaluate:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["velacl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+
