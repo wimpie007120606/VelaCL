@@ -1,7 +1,7 @@
 {
   "run_name": "naive",
   "status": "complete",
-  "git_commit": "uncommitted",
+  "git_commit": "3eab0a9a52def3bf26fb221185cd05ebb0967334",
   "parameters": {
     "method": "naive",
     "seed": 42,
@@ -36,5 +36,5 @@
     "torch": "2.13.0+cpu",
     "cuda": false
   },
-  "training_time_seconds": 0.5775543369963998
+  "training_time_seconds": 0.5184002979995057
 }

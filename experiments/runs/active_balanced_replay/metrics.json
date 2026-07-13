@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "method": "active_balanced_replay",
-  "created_at": "2026-07-13T08:38:10.555575+00:00",
+  "created_at": "2026-07-13T17:10:30.434018+00:00",
   "dataset_sha256": "45650990c8fcc0c8ca7963cbb8d3b427614c22035102ef3cb39351f983f6612e",
   "device": "cpu",
   "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
@@ -21,7 +21,7 @@
       "training": {
         "loss": 1.5812045733133953,
         "examples": 12,
-        "throughput": 667.9271936859884
+        "throughput": 574.5563650806698
       },
       "aggregate": {
         "accuracy": 0.5833333333333334,
@@ -125,7 +125,7 @@
       "training": {
         "loss": 1.782824198404948,
         "examples": 16,
-        "throughput": 718.3803003456751
+        "throughput": 808.1664274661674
       },
       "aggregate": {
         "accuracy": 0.5625,
@@ -230,7 +230,7 @@
       "training": {
         "loss": 1.3799638549486797,
         "examples": 24,
-        "throughput": 650.3754129602278
+        "throughput": 754.6410582257289
       },
       "aggregate": {
         "accuracy": 0.7916666666666666,
@@ -336,7 +336,7 @@
       "training": {
         "loss": 1.6584494908650715,
         "examples": 32,
-        "throughput": 709.2138013131668
+        "throughput": 768.0926442634312
       },
       "aggregate": {
         "accuracy": 0.5833333333333334,
@@ -443,7 +443,7 @@
       "training": {
         "loss": 1.2700726588567097,
         "examples": 40,
-        "throughput": 653.0408886603985
+        "throughput": 683.8446856053703
       },
       "aggregate": {
         "accuracy": 0.7142857142857143,
@@ -552,7 +552,7 @@
       "training": {
         "loss": 1.14763253264957,
         "examples": 48,
-        "throughput": 869.0217639634695
+        "throughput": 624.275807549902
       },
       "aggregate": {
         "accuracy": 0.6842105263157895,
