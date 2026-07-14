@@ -23,3 +23,12 @@ jobs:
         working-directory: apps/dashboard
       - run: npm run build
         working-directory: apps/dashboard
+      - name: Verify Pages export serves experiment data
+        working-directory: apps/dashboard
+        run: |
+          GITHUB_PAGES=1 npm run build
+          test -f out/experiments.json
+          test -f ../../docs/experiments.json
+          npx playwright install --with-deps chromium
+          node scripts/check-export.mjs out
+          node scripts/check-export.mjs ../../docs
